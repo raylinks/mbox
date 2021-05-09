@@ -1,0 +1,212 @@
+[18-Mar-2021 18:08:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->co in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:16:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'root', '', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->co in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:25:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'localhost:3306' (0) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connector in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:25:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'localhost:3306' (0) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connector in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:31:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'localhost:3306' (0) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connector in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:32:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'localhost:3306' (0) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connector in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:33:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'localhost:3306' (0) in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=loca...', 'mboxexpr_nexy', 'olalekan1', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connector in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:35:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mboxexpr_access.translations' doesn't exist in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('select * from `...')
+#1 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php(662): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home2/mboxexpr/public_html/access/vendor in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 669
+[18-Mar-2021 18:35:14 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[18-Mar-2021 18:44:59 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[31-Mar-2021 23:31:38 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:31:45 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:31:46 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:31:46 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:31:49 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:31:49 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:32:48 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:32:51 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:32:52 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:34:07 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:34:09 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[31-Mar-2021 23:34:09 UTC] PHP Deprecated:  Unparenthesized `a ? b : c ? d : e` is deprecated. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 997
+[04-Apr-2021 00:45:07 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[04-Apr-2021 00:45:07 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[04-Apr-2021 00:48:46 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[04-Apr-2021 00:48:56 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:35:53 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:35:54 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:35:58 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:35:59 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:36:01 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:36:06 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[06-Apr-2021 12:36:11 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[21-Apr-2021 01:25:44 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[21-Apr-2021 01:25:45 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[21-Apr-2021 01:26:02 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[21-Apr-2021 01:26:06 UTC] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(777): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home2/mboxexpr/public_html/access/storage/framework/views/839a10cb999289802c986271f3456dabc523dbe6.php(40): route('home')
+#2 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home2/mboxexpr...')
+#3 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/mboxexpr...', Array)
+#4 /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/View/View.php(143): Illuminate\View\Engines\CompilerEngine->get('/home2/mboxexpr...', Array)
+#5 /home2/mbo in /home2/mboxexpr/public_html/access/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-May-2021 20:11:28 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:28 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:28 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:28 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:29 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:29 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:29 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:36 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:36 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:36 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:43 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:47 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:47 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 20:11:47 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
+[08-May-2021 22:10:26 UTC] PHP Fatal error:  Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in /home2/mboxexpr/public_html/access/app/Http/Helpers.php on line 1001
