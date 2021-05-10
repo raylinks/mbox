@@ -20,6 +20,7 @@ use App\Customorder;
 use App\Color;
 use App\Order;
 use App\BusinessSetting;
+use App\Models\Cart;
 use App\Http\Controllers\SearchController;
 use ImageOptimizer;
 use Cookie;
@@ -395,6 +396,51 @@ class HomeController extends Controller
       $listorders = Customorder::where('vendor_id', Auth::user()->id)->where('status',1)->get();
    
         return view('frontend.user.seller.sellercustomorder',compact('listorders'));
+    }
+
+
+    public function approveCustomOrder(Request $request) {
+        $customerOrder = $request['id'];
+
+
+        $order = Customorder::findOrFail($customerOrder);
+
+        // add to the user's cart here 
+
+        Cart::create([
+            'price' => $order->offer_price,
+            'user_id' => $order->user_id,
+            'owner_id' => $order->vendor_id,
+            'product_id' => $order->product_id,
+            'quantity' => $order->quantity
+        ]);
+
+        // Update the status of the custom order to 2 ! 2 means approved
+
+        $order->update([
+            'status' => 2
+        ]);
+
+        flash(translate('This product has now been added to the buyers cart'))->success();
+
+        return back();
+
+    }
+
+    public function rejectCustomOrder(Request $request) {
+        $customerOrder = $request['id'];
+
+
+        $order = Customorder::findOrFail($customerOrder);
+
+        $order->update([
+            'status' => 0
+        ]);
+
+        flash(translate('This custom order has now been rejected'))->success();
+
+        return back();
+
     }
 
 

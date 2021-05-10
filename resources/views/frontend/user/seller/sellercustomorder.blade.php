@@ -57,8 +57,8 @@
                           
                          
                             <td>
-                                  <button type="button" class="btn btn-primary btn-sm">Approve</button>
-                               <button type="button" class="btn btn-danger btn-sm">Reject</button>
+                                  <button type="button" onclick="approve({{$order->id}})" class="btn btn-primary btn-sm">Approve</button>
+                               <button type="button" onclick="reject({{$order->id}})" class="btn btn-danger btn-sm">Reject</button>
 
                             </td>
                        
@@ -71,6 +71,88 @@
         </div>
     </div>
 
+@endsection
+
+@section('modal')
+
+
+<div class="modal fade" id="reject-custom-order-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6">{{ translate('Custom Order Request')}}</h5>
+          <button type="button" class="close" data-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{translate('Are you sure, You want to reject this?')}}</p>
+        </div>
+        <div class="modal-footer">
+          
+
+
+          <form method="POST" action="{{route('reject-custom-order')}}">
+            @csrf
+            <input type="hidden" name="id" id="reject-id">
+
+             <button type="button" class="btn btn-light" data-dismiss="modal">{{translate('Cancel')}}</button>
+          <button type="submit" id="reject_link" class="btn btn-primary">{{ translate('reject') }}</button>
+
+        </form>
+
+
+
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="accept-custom-order-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6">{{ translate('Custom Order Request')}}</h5>
+          <button type="button" class="close" data-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{translate('Are you sure, You want to approve this?')}}</p>
+        </div>
+        <div class="modal-footer">
+            <form method="POST" action="{{route('approve-custom-order')}}">
+                @csrf
+                <input type="hidden" name="id" id="accept-id">
+                <button type="button" class="btn btn-light" data-dismiss="modal">{{translate('Cancel')}}</button>
+                 <button type="submit" id="reject_link" class="btn btn-primary">{{ translate('approve') }}</button>
+            </form>
+          
+        </div>
+      </div>
+</div>
+
+@endsection
+
+
+
+
+
+@section('script')
+
+<script>
+
+function approve(id) {
+    document.getElementById('accept-id').value = id
+    $('#accept-custom-order-modal').modal('show')
+}
+
+function reject(id) {
+    document.getElementById('reject-id').value = id
+    $('#reject-custom-order-modal').modal('show')
+}
+
+</script>
+    
 @endsection
 
 
