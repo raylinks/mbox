@@ -139,8 +139,8 @@ Route::get('/categories', 'HomeController@all_categories')->name('categories.all
 Route::get('/sellers', 'HomeController@all_seller')->name('sellers');
 
 Route::get('/sellerscustom', 'HomeController@sellercustom');
-
-
+Route::post('approve-custom-order', 'HomeController@approveCustomOrder')->name('approve-custom-order');
+Route::post('reject-custom-order', 'HomeController@rejectCustomOrder')->name('reject-custom-order');
 
 
 
