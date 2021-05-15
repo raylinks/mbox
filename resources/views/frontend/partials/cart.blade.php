@@ -23,11 +23,13 @@
                     $total = 0;
                 @endphp
                 @foreach($cart as $key => $cartItem)
+              
                     @php
-                        $product = \App\Product::find($cartItem->id);
+                        $product = \App\Product::find($cartItem->product_id);
                         
                         $total = $total + $cartItem->price *$cartItem->quantity;
                     @endphp
+               
                     @if ($product != null)
                         <li class="list-group-item">
                             <span class="d-flex align-items-center">
@@ -53,7 +55,6 @@
                                 </span>
                             </span>
                         </li>
-                        
                     @endif
 
                     

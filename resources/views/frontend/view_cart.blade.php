@@ -48,7 +48,7 @@
         @php
             $cart =  App\Models\Cart::where('user_id',  Auth::id())->orderBy('created_at', 'desc')->get()
         @endphp
-        @if( $cart && count($cart)) > 0 )
+        @if( $cart && count($cart) > 0 )
             <div class="row">
                 <div class="col-xxl-8 col-xl-10 mx-auto">
                     <div class="shadow-sm bg-white p-3 p-lg-4 rounded text-left">
@@ -65,21 +65,22 @@
                                 @php
                                 $total = 0;
                                 @endphp
-                                @foreach (($cart) as $key => $cartItem))
+                                @foreach (($cart) as $key => $cartItem)
                                     @php
-                                    $product = \App\Product::find($cartItem->id);
+                                    $product = \App\Product::find($cartItem->product_id);
                                     $total = $total + $cartItem->price*$cartItem->quantity;
                                     $product_name_with_choice = $product ? $product->getTranslation('name') : '';
                                     if ($cartItem->variation != null) {
                                         $product_name_with_choice = $product ? $product->getTranslation('name') : ''.' - '.$cartItem->variation;
                                     }
                                     @endphp
+                               
                                     <li class="list-group-item px-0 px-lg-3">
                                         <div class="row gutters-5">
                                             <div class="col-lg-5 d-flex">
-                                                <span class="mr-2 ml-0">
+                                                 <span class="mr-2 ml-0">
                                                     <img
-                                                        src="{{ uploaded_asset($product ? $product->thumbnail_img : '') }}"
+                                                       src="{{ uploaded_asset($product ? $product->thumbnail_img : '') }}"
                                                         class="img-fit size-60px rounded"
                                                         alt="{{ $product ? $product->getTranslation('name') : '' }}"
                                                     >
