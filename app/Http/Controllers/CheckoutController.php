@@ -23,6 +23,7 @@ use App\User;
 use App\Address;
 use Session;
 use App\Utility\PayhereUtility;
+use App\Models\Cart;
 
 class CheckoutController extends Controller
 {
@@ -259,7 +260,8 @@ class CheckoutController extends Controller
 
     public function get_shipping_info(Request $request)
     {
-        if (Session::has('cart') && count(Session::get('cart')) > 0) {
+        $cart = Cart::where('user_id',  Auth::id())->orderBy('created_at', 'desc')->get();
+        if ($cart && count($cart) > 0) {
             $categories = Category::all();
             return view('frontend.shipping_info', compact('categories'));
         }

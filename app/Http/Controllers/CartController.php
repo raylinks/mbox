@@ -9,6 +9,8 @@ use App\Category;
 use Session;
 use App\Color;
 use Cookie;
+use Auth;
+use App\Models\Cart;
 
 class CartController extends Controller
 {
@@ -65,6 +67,8 @@ class CartController extends Controller
         }
 
         $data['variant'] = $str;
+        $data['variation'] = $str;
+        $data['user_id'] = Auth::id();
 
         if($str != null && $product->variant_product){
             $product_stock = $product->stocks->where('variant', $str)->first();
@@ -156,18 +160,25 @@ class CartController extends Controller
                         $cartItem['quantity'] += $request['quantity'];
                     }
                 }
+
                 $cart->push($cartItem);
             }
 
             if (!$foundInCart) {
                 $cart->push($data);
             }
-            $request->session()->put('cart', $cart);
         }
         else{
-            $cart = collect([$data]);
-            $request->session()->put('cart', $cart);
+            $cart = collect([$data]);           
         }
+
+        // $request->session()->put('cart', $cart);
+
+
+        foreach($cart as $c) {
+            Cart::create($c);
+        }
+
 
         return array('status' => 1, 'view' => view('frontend.partials.addedToCart', compact('product', 'data'))->render());
     }
