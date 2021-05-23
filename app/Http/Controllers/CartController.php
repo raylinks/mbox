@@ -67,7 +67,7 @@ class CartController extends Controller
         }
 
         $data['variant'] = $str;
-        $data['variation'] = $str;
+         $data['variation'] = $str;
         $data['user_id'] = Auth::id();
 
         if($str != null && $product->variant_product){
@@ -160,25 +160,20 @@ class CartController extends Controller
                         $cartItem['quantity'] += $request['quantity'];
                     }
                 }
-
                 $cart->push($cartItem);
             }
 
             if (!$foundInCart) {
                 $cart->push($data);
             }
+
         }
         else{
-            $cart = collect([$data]);           
-        }
-
-        // $request->session()->put('cart', $cart);
-
-
-        foreach($cart as $c) {
+            $cart = collect([$data]);
+           foreach($cart as $c) {
             Cart::create($c);
         }
-
+        }
 
         return array('status' => 1, 'view' => view('frontend.partials.addedToCart', compact('product', 'data'))->render());
     }
@@ -186,10 +181,10 @@ class CartController extends Controller
     //removes from Cart
     public function removeFromCart(Request $request)
     {
-        if($request->session()->has('cart')){
-            $cart = $request->session()->get('cart', collect([]));
-            $cart->forget($request->key);
-            $request->session()->put('cart', $cart);
+       $cart = Cart::find($request->key);
+
+        if($cart != null ){
+            $cart->delete();
         }
 
         return view('frontend.partials.cart_details');
@@ -198,7 +193,10 @@ class CartController extends Controller
     //updated the quantity for a cart item
     public function updateQuantity(Request $request)
     {
+        //dd('love is here');
         $cart = $request->session()->get('cart', collect([]));
+       // $cart = Cart::where('user_id',  Auth::id())->orderBy('created_at', 'desc')->get();
+   
         $cart = $cart->map(function ($object, $key) use ($request) {
             if($key == $request->key){
                 $product = \App\Product::find($object['id']);
@@ -219,6 +217,7 @@ class CartController extends Controller
             }
             return $object;
         });
+        
         $request->session()->put('cart', $cart);
 
         return view('frontend.partials.cart_details');
