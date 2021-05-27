@@ -193,30 +193,34 @@ class CartController extends Controller
     //updated the quantity for a cart item
     public function updateQuantity(Request $request)
     {
-        //dd('love is here');
+
         $cart = $request->session()->get('cart', collect([]));
+
+        $cart = Cart::findOrFail($request->key);
+
        // $cart = Cart::where('user_id',  Auth::id())->orderBy('created_at', 'desc')->get();
    
-        $cart = $cart->map(function ($object, $key) use ($request) {
-            if($key == $request->key){
-                $product = \App\Product::find($object['id']);
-                if($object['variant'] != null && $product->variant_product){
-                    $product_stock = $product->stocks->where('variant', $object['variant'])->first();
-                    $quantity = $product_stock->qty;
-                    if($quantity >= $request->quantity){
-                        if($request->quantity >= $product->min_qty){
-                            $object['quantity'] = $request->quantity;
-                        }
-                    }
-                }
-                elseif ($product->current_stock >= $request->quantity) {
-                    if($request->quantity >= $product->min_qty){
-                        $object['quantity'] = $request->quantity;
-                    }
-                }
-            }
-            return $object;
-        });
+        // $cart = $cart->map(function ($object, $key) use ($request) {
+            // if($key == $request->key){
+                $product = \App\Product::find($cart->id);
+                dd($product);
+                // if($object['variant'] != null && $product->variant_product){
+                //     $product_stock = $product->stocks->where('variant', $object['variant'])->first();
+                //     $quantity = $product_stock->qty;
+                //     if($quantity >= $request->quantity){
+                //         if($request->quantity >= $product->min_qty){
+                //             $object['quantity'] = $request->quantity;
+                //         }
+                //     }
+                // }
+                // elseif ($product->current_stock >= $request->quantity) {
+                //     if($request->quantity >= $product->min_qty){
+                //         $object['quantity'] = $request->quantity;
+                //     }
+                // }
+            // }
+            // return $object;
+        // });
         
         $request->session()->put('cart', $cart);
 

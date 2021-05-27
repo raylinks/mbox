@@ -48,7 +48,7 @@
         @php
             $cart =  App\Models\Cart::where('user_id',  Auth::id())->orderBy('created_at', 'desc')->get()
         @endphp
-        @if( $cart && count($cart) > 0 )
+        @if( $cart && count($cart)) > 0 )
             <div class="row">
                 <div class="col-xxl-8 col-xl-10 mx-auto">
                     <div class="shadow-sm bg-white p-3 p-lg-4 rounded text-left">
@@ -65,23 +65,21 @@
                                 @php
                                 $total = 0;
                                 @endphp
-                                @foreach (($cart) as $key => $cartItem)
-                              
+                                @foreach (($cart) as $key => $cartItem))
                                     @php
-                                    $product = \App\Product::find($cartItem->product_id);
+                                    $product = \App\Product::find($cartItem->id);
                                     $total = $total + $cartItem->price*$cartItem->quantity;
                                     $product_name_with_choice = $product ? $product->getTranslation('name') : '';
                                     if ($cartItem->variation != null) {
                                         $product_name_with_choice = $product ? $product->getTranslation('name') : ''.' - '.$cartItem->variation;
                                     }
                                     @endphp
-                               
                                     <li class="list-group-item px-0 px-lg-3">
                                         <div class="row gutters-5">
                                             <div class="col-lg-5 d-flex">
-                                                 <span class="mr-2 ml-0">
+                                                <span class="mr-2 ml-0">
                                                     <img
-                                                       src="{{ uploaded_asset($product ? $product->thumbnail_img : '') }}"
+                                                        src="{{ uploaded_asset($product ? $product->thumbnail_img : '') }}"
                                                         class="img-fit size-60px rounded"
                                                         alt="{{ $product ? $product->getTranslation('name') : '' }}"
                                                     >
@@ -104,7 +102,7 @@
                                                         <button class="btn col-auto btn-icon btn-sm btn-circle btn-light" type="button" data-type="minus" data-field="quantity[{{ $key }}]">
                                                             <i class="las la-minus"></i>
                                                         </button>
-                                                        <input type="text" name="quantity[{{ $key }}]" class="col border-0 text-center flex-grow-1 fs-16 input-number" placeholder="1" value="{{ $cartItem->quantity }}" min="1" max="10" readonly onchange="updateQuantity({{ $key }}, this)">
+                                                        <input type="text" name="quantity[{{ $key }}]" class="col border-0 text-center flex-grow-1 fs-16 input-number" placeholder="1" value="{{ $cartItem->quantity }}" min="1" max="10" readonly onchange="updateQuantity({{ $cartItem }}, this)">
                                                         <button class="btn col-auto btn-icon btn-sm btn-circle btn-light" type="button" data-type="plus" data-field="quantity[{{ $key }}]">
                                                             <i class="las la-plus"></i>
                                                         </button>
@@ -116,7 +114,7 @@
                                                 <span class="fw-600 fs-16 text-primary">{{ single_price(($cartItem->price+$cartItem->tax)*$cartItem->quantity) }}</span>
                                             </div>
                                             <div class="col-lg-auto col-6 order-5 order-lg-0 text-right">
-                                                <a href="javascript:void(0)" onclick="removeFromCartView(event, {{ $cartItem->id }})" class="btn btn-icon btn-sm btn-soft-primary btn-circle">
+                                                <a href="javascript:void(0)" onclick="removeFromCartView(event, {{ $key }})" class="btn btn-icon btn-sm btn-soft-primary btn-circle">
                                                     <i class="las la-trash"></i>
                                                 </a>
                                             </div>
@@ -259,7 +257,7 @@
     }
 
     function updateQuantity(key, element){
-        $.post('{{ route('cart.updateQuantity') }}', { _token:'{{ csrf_token() }}', key:key, quantity: element.value}, function(data){
+        $.post('{{ route('cart.updateQuantity') }}', { _token:'{{ csrf_token() }}', key:key.id, quantity: element.value}, function(data){
             updateNavCart();
             $('#cart-summary').html(data);
         });
